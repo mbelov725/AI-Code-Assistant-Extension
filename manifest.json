@@ -4,18 +4,19 @@
     "version": "1.0",
     "manifest_version": 3,
     "action": {
-        "default_icon": "logo.png",
-        "default_popup": "index.html"
+        "default_icon": "public/logo.png",
+        "default_popup": "src/index.html"
     },
     "icons": {
-        "16": "logo.png",
-        "32": "logo.png",
-        "48": "logo.png",
-        "128": "logo.png"
+        "16": "public/logo.png",
+        "32": "public/logo.png",
+        "48": "public/logo.png",
+        "128": "public/logo.png"
     },
     "content_scripts": [
         {
-            "js": ["content.js"]
+            "matches": ["<all_urls>"],
+            "js": ["src/content.js"]
         }
     ]
 }
