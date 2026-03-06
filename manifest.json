@@ -1,0 +1,21 @@
+{
+    "name": "AI Code Assistant",
+    "description": "An extension to help you understand your code better.",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_icon": "logo.png",
+        "default_popup": "index.html"
+    },
+    "icons": {
+        "16": "logo.png",
+        "32": "logo.png",
+        "48": "logo.png",
+        "128": "logo.png"
+    },
+    "content_scripts": [
+        {
+            "js": ["content.js"]
+        }
+    ]
+}
