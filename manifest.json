@@ -15,9 +15,9 @@
   },
   "permissions": ["sidePanel"],
   "side_panel": {
-    "default_path": "src/sidePanel.html"
+    "default_path": "index.html"
   },
   "background": {
-    "service_worker": "src/serviceWorker.js"
+    "service_worker": "old-src/serviceWorker.js"
   }
 }
