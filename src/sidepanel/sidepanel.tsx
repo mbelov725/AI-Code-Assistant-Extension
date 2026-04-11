@@ -1,4 +1,4 @@
-import "./App.css";
+import "./sidepanel.css";
 
 function App() {
   return (
