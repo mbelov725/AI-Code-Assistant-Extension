@@ -4,8 +4,8 @@
     "module": "ES2020",
     "moduleResolution": "Node",
     "outDir": "dist",
-    "rootDir": "src",
+    "rootDir": "src/background",
     "strict": true
   },
-  "include": ["src/background", "src/content"]
+  "include": ["src/background"]
 }

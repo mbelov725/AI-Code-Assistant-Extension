@@ -5,7 +5,7 @@
   "manifest_version": 3,
   "action": {
     "default_icon": "logo.png",
-    "default_title": "Click to open panel"
+    "default_title": "Open AI Code Assistant"
   },
   "icons": {
     "16": "logo.png",
@@ -13,12 +13,19 @@
     "48": "logo.png",
     "128": "logo.png"
   },
-  "permissions": ["sidePanel"],
+  "permissions": ["sidePanel", "contextMenus", "scripting", "activeTab"],
   "side_panel": {
     "default_path": "index.html"
   },
   "background": {
-    "service_worker": "background/background.js",
+    "service_worker": "background.js",
     "type": "module"
-  }
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
 }
